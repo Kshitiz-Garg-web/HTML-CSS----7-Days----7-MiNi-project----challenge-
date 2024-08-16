@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(11 14 39);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.cont {
+    border-radius: 5px;
+    position: relative;
+}
+
+.Transparent_card {
+    width: 100%;
+    max-width: 400px;
+    /* padding: 8px; */
+    background-color: rgba(240, 249, 240, 0.201);
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.inner-box {
+    background-color: rgba(240, 249, 240, 0.201);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    /* max-width: 330px; */
+    width: 100%;
+    display: block;
+}
+
+.status {
+    width: 100%;
+    max-Width: 88.51px;
+    Height: 24.99px;
+    background-color: rgba(105, 81, 7, 0.433);
+    color: rgb(190, 190, 23);
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+
+.para {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+
+h5 {
+    color: antiquewhite;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.rating {
+    color: rgb(206, 162, 50);
+    margin-top: 0;
+}
+
+.view {
+    color: white;
+    margin-top: -15px;
+}
+
+.sep {
+    opacity: 0.4;
+}
+
+.cart {
+    text-align: center;
+    color: white;
+}
+
+.ball1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(69.62% 69.62% at 50% 50%, #EA8BFA 0%, #7526F5 100%);
+    position: absolute;
+    left: -100px;
+    top: -20px
+}
+
+.ball2 {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: radial-gradient(63.62% 63.62% at 50% 50%, #FF00C7 0%, #BD95FF 0.01%, #A661FF 32.29%, #6100FF 98.59%);
+    position: absolute;
+    left: 250px;
+    top: -50px;
+}
+
+.ball3 {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: radial-gradient(67.47% 67.47% at 50% 50%, #FED0FF 0%, #7F00FF 100%);
+    position: absolute;
+    left: -130px;
+    top: 300px;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .ball1 {
+        width: 100px;
+        height: 100px;
+        left: -30px;
+        top: -20px
+    }
+
+    .ball2 {
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top: -40px;
+    }
+
+    .ball3 {
+        width: 125px;
+        height: 125px;
+        left: -75px;
+        top: 350px;
+    }
+
+    .cont {
+        width: 280px;
+    }
+
+    .Transparent_card {
+        width: 280px;
+    }
+
+    .inner-box {
+        width: 250px;
+        margin-inline: auto;
+    }
+
+    .heart {
+        color: white;
+        display: flex;
+        margin-top: -15px;
+        margin-left: -75px;
+    }
+
+    img {
+        max-width: 280px;
+        width: 100%;
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .ball1 {
+        width: 100px;
+        height: 100px;
+        left: -30px;
+        top: -20px
+    }
+
+    .ball2 {
+        width: 150px;
+        height: 150px;
+        left: 200px;
+        top: -40px;
+    }
+
+    .ball3 {
+        width: 130px;
+        height: 130px;
+        left: -50px;
+        top: 350px;
+
+    }
+
+    .cont {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ball1 {
+        width: 100px;
+        height: 100px;
+        left: -20px;
+        top: -20px
+    }
+
+    .ball2 {
+        width: 150px;
+        height: 150px;
+        left: 155px;
+        top: -40px;
+    }
+
+    .ball3 {
+        width: 130px;
+        height: 130px;
+        left: -30px;
+        top: 350px;
+
+    }
+
+}
