@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    padding-inline: 4px;
+}
+
+.container {
+
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3.5px groove black;
+    border-radius: 50px;
+    min-height: 500px;
+    max-width: 100%;
+    width: 710px;
+    position: relative;
+    overflow: hidden;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup {
+    position: absolute;
+    opacity: 0;
+    top: 270px;
+    /* left: 0px; */
+    transition: top .25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.mern {
+    padding: 4px;
+}
+
+.p1 {
+    margin-left: -7px;
+}
+
+.letter {
+    position: relative;
+}
+
+.class:hover>.popup {
+    opacity: 1;
+    top: 130px;
+}
+
+.container:has(.mern:hover) {
+    border-color: green;
+}
+
+.container:has(.express:hover) {
+    border-color: rgb(252, 252, 252);
+}
+
+.container:has(.react:hover) {
+    border-color: rgb(97, 218, 251);
+}
+
+.container:has(.nodejs:hover) {
+    border-color: #8CC84B;
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .p1{
+        margin-left: -2px;
+    }
+}
