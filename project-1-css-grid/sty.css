@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: rgb(203, 249, 224);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body:has(.TeamBuilder:hover) {
+    background: #FFAFBD;
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+}
+
+body:has(.Calculator:hover) {
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);
+    background: linear-gradient(to right, #000C40, #F0F2F0);
+}
+
+body:has(.Karma:hover) {
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+}
+
+body:has(.Supervisor:hover) {
+    background: #00c3ff;
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+}
+
+header {
+    text-align: center;
+}
+
+.firstLine,
+.thirdLine {
+    opacity: calc(.4);
+    font-weight: 100;
+}
+
+.secondLine {
+    margin-block: 0;
+    margin-top: -15px;
+}
+
+.Home {
+    max-width: 900px;
+    display: grid;
+    grid-template-areas:
+    "empty1 teamBuilder empty2"
+    "supervisor teamBuilder calculator"
+    "supervisor karma calculator"
+    "empty3 karma empty4 ";
+    margin-inline: auto;
+    margin-block: 100px;
+    grid-gap: 35px;
+    margin-top: 100px;
+}
+
+.Home p {
+    opacity: .4;
+    margin-top: 0;
+}
+
+.Box {
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 0px rgb(24 53 157 / 25%);
+    padding: 0px 20px 5px 20px;
+}
+
+.TeamBuilder {
+    grid-area: teamBuilder;
+    background-color: rgb(255, 255, 255);
+}
+
+.Supervisor {
+    grid-area: supervisor;
+    background-color: rgb(255, 255, 255);
+}
+
+.Calculator {
+    grid-area: calculator;
+    background-color: rgb(255, 255, 255);
+}
+
+.Karma {
+    grid-area: karma;
+    background-color: rgb(255, 255, 255);
+}
+
+.icon {
+    display: flex;
+    justify-content: end;
+}
+
+.box1 {
+    border-top: 1px solid red;
+    margin-top: 20px;
+}
+
+.box2 {
+    border-top: 1px solid aqua;
+    margin-top: 20px;
+}
+
+.box3 {
+    border-top: 1px solid blue;
+    margin-top: 20px;
+}
+
+.box4 {
+    border-top: 1px solid chocolate;
+    margin-top: 20px;
+}
+
+.TeamBuilder:hover,
+.Calculator:hover,
+.Karma:hover,
+.Supervisor:hover {
+    transform: scale(1.1);
+    background-color: rgb(229, 229, 193);
+}
+
+@media screen and (max-width:680px) {
+
+ .Home {
+    max-width: 300px;
+    display: grid;
+    grid-template-areas:
+    "teamBuilder"
+    "supervisor"
+    "calculator"
+    "karma";
+    margin-inline: auto;
+    margin-block: 100px;
+    grid-gap: 25px;
+    margin-top: 40px;
+    }
+
+    .TeamBuilder {
+        grid-area: teamBuilder;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Supervisor {
+        grid-area: supervisor;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Calculator {
+        grid-area: calculator;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Karma {
+        grid-area: karma;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
