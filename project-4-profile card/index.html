@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile-Card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./icons/user-profile.ico" type="image/x-icon">
+  </head>
+  <body>
+  <main>
+   <div class="outer-most-container">
+    <div class="container">
+      <div class="like-shear-block">
+        <img class="like-img" src="./images/like.png" alt="like-img"/>
+        <img class="share-img" onclick="navigator.share({url: location.href})" src="./images/share-arrow.png" alt="share-img"/>
+      </div>
+      <!-- <div class="circle-block">
+        <div class="circle1"></div>
+        <div class="cicrle2"></div>
+      </div> -->
+      <div class="inner-block">
+        <div class="profile-dot-block">
+            <img class="profile-img" src="./images/boy-using-laptop-computer-cartoon-vector-illustration-graphic-design-vector-illustration-graphic-design_1142-104958.avif" alt="profile">
+        </div>
+        <div class="text-btn-block">
+            <h2>Kshitiz Garg (EuroCoder)</h2>
+            <p>Front-End Developer</p>
+            <div class="view-profile-block">
+                <input id="btn" class="input" type="checkbox"></input>
+                <label class="label" for="btn">View Full Profile</label>
+            </div>
+            
+        </div>
+        <div class="social-media-block">
+            <a target="_blank"  href="https://linkedin.com/in/kshitiz-garg-27482a31a"><img class="social-media-icon linkd" src="./icons/658606_line_linkedin_neon_professional_reference_icon.png" alt="linkdin"></a>
+            <a target="_blank"  href="https://github.com/Kshitiz-Garg-web"><img class="social-media-icon" src="./icons/github-icon.png" alt="github"></a>
+            <a style="border-radius: 50%;" target="_blank"  href="https://x.com/_Kshitiz_Garg_"><img class="social-media-icon x-account" src="./icons/Screenshot 2024-07-28 142845.png" alt="X-account"></a>
+            <a target="_blank"  href="https://leetcode.com/u/Kshitiz-Garg/"><img class="social-media-icon" src="./icons/leetcode.svg" alt="leetcode"></a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </main>  
+  </body>
+</html>
