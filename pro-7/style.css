@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.top-heading{
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+}
+
+.container{
+    background-color: rgb(120, 188, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.input-feild{
+    height: 32px;
+    width: 175px;
+    font-family: inherit;
+}
+
+.btns{
+    margin-left: 4px;
+    padding: 12px; 
+    
+}
+
+.btn{
+    background-color: rgb(27, 255, 255);
+    border: none;
+    color: rgb(37, 36, 36);
+    padding: 4px 8px;
+    font-family: inherit;
+}
+
+.submit-btn{
+    cursor: pointer;
+}
+
+.start-game-btn{
+    cursor: not-allowed;
+    filter: blur(.8px);
+}
+
+.submit-off{
+    cursor: not-allowed;
+    filter: blur(.8px);
+}
+
+.start-game{
+    cursor: pointer;
+    filter: unset;
+}
